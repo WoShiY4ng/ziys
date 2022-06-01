@@ -1,0 +1,8 @@
+#!name=BoxJs
+#!desc=boxjs环境
+
+[General]
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
+
+[Script]
+Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=, requires-body=true, timeout=120
