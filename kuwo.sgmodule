@@ -1,0 +1,6 @@
+#!name=kuwo
+#!desc=kuwo音乐破解vip
+
+
+[Script]
+酷我 = type=http-response,script-path=xxxxx.js,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),max-size=131072,requires-body=true,timeout=10,enable=true
