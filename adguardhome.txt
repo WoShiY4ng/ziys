@@ -1,6 +1,54 @@
 #version: 20220814
    app内部广告和挖矿广告
 #
+
+
+#自定义规则  安卓电视广告
+127.0.0.1 sdkauth.hpplay.cn
+127.0.0.1 adeng.hpplay.cn
+127.0.0.1 ad.hpplay.cn
+127.0.0.1 conf.hpplay.cn
+127.0.0.1 fix.hpplay.cn
+127.0.0.1 adcdn.hpplay.cn
+127.0.0.1 sl.hpplay.cn
+127.0.0.1 rp.hpplay.cn
+127.0.0.1 sentry.io
+127.0.0.1 o1098464.ingest.sentry.io
+127.0.0.1 advapikj.joyplus.tv
+127.0.0.0 adc.kkapp.com
+127.0.0.1 alog.umeng.com
+127.0.0.1 cdn.kkapp.com
+127.0.0.1 cloudserv.bbtv.cn
+127.0.0.1 tv.kkapp.com
+127.0.0.1 tv.showcome.net
+127.0.0.1 tvpic.bbtv.cn
+127.0.0.1 pingma.qq.com
+||pss.alicdn.com^$important
+||adm.kkapp.com^$important
+||adsmart.konka.com^$important
+||ottirs.cp12.ott.cibntv.net^$important
+||appupgrade.alicdn.com^$important
+||adsmart.konka.com.lan^$important
+||upgrade.kkapp.com^$important
+||cdn-hw-sysupgrade.kkapp.com^$important
+||sysupdate.kkapp.com^$important
+||alog.umengcloud.com^$important
+||www.baidu.com^$client='192.168.123.7'
+||pingma.qq.com.lan^$important
+||adc.kkapp.com.lan^$important
+||upgrade.kkapp.com.lan^$important
+||miaozhen.com^$important
+||ef-dongfeng.tanx.com^$important
+||track-ad.kuyun.com^$important
+||analysis.kuyun.com^$important
+||alog.umeng.co.lan^$important
+||alog.umeng.co^$important
+||alog.umeng.com.lan^$important
+||adashx.m.taobao.com^$important
+||mobads.baidu.com^$important
+||static.adguard.com^$important
+
+
 0.0.0.0 optimus-ads.amap.com
 #香哈升级包
 0.0.0.0 t1.cdn.xiangha.com
