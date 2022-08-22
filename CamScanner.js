@@ -9,8 +9,6 @@ http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\
 
 [MITM]
 hostname = ap*.intsig.net
-
-
 **************************/
 let obj = JSON.parse($response.body);
 obj = {"data":{"psnl_vip_property":{"expiry":"2687017600"}}};
