@@ -1,21 +1,11 @@
 /*
-洪恩双语绘本 unlock Vip by 军哥哥
-
-app 下载地址:https://t.cn/AiCEguqn
-
-电报频道：https://t.me/ThorHCC
-电报群组：https://t.me/f4thorHCC
-QQ资源群：189519867
-QQ吹牛群：316864309
-
-QX:
-
-[rewrite_local]👇
-
-https:\/\/bookapi\.ihuman\.com\/(v1\/get\_user\_info|v1\/get\_purchase\_list) url script-response-body hnsyhb.js
+洪恩双语绘本 
 
 
-MITM = bookapi.ihuman.com
+[Script]
+http-response https:\/\/bookapi\.ihuman\.com\/(v1\/get\_user\_info|v1\/get\_purchase\_list) requires-body=1,max-size=0,script-path=hnsyhb.js
+[MITM]
+hostname = bookapi.ihuman.com
 
 */
 
