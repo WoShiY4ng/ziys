@@ -5,39 +5,13 @@
 ***************************
 Surge4 or Loon:
 [Script]
-
-http-response https?:\/\/baimiao\.uzero\.cn\/api\/recognize\/recognize requires-body=1,max-size=0,script-path=baimiao.js
+http-response https?:\/\/baimiao\.uzero\.cn\/api\/recognize\/recognizeInfo requires-body=1,max-size=0,script-path=baimiao.js
 [MITM]
 hostname =  baimiao.uzero.cn
 **************************/
 let body = JSON.parse($response.body)
 
-body = {
-	"code": 0,
-	"message": null,
-	"value": {
-		"id": 34313892,
-		"userId": 4436051,
-		"dayTime": 1663603200,
-		"monthTime": 1661961600,
-		"normalCount": 10,
-		"batchCount": 10,
-		"translateCount": 10,
-		"shareCount": 10,
-		"pdfCount": 10,
-		"pdfTranslateCount": 10,
-		"updateTime": 0,
-		"createdTime": 1663635061,
-		"balanceCount": 10,
-		"remainNormal": 40,
-		"remainBatch": 10,
-		"remainTranslate": 30,
-		"remainShare": 200,
-		"recognizeTranslateAll": 10,
-		"remainPdfTransCount": 10,
-		"remainPdfTranslateCount": 10
-	}
-}
+body =  body.replace('-100':'100'）
 
 $done({body:JSON.stringify(body)})
 
