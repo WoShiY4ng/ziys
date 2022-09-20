@@ -11,7 +11,7 @@ hostname =  baimiao.uzero.cn
 **************************/
 let body = JSON.parse($response.body)
 
-body =  body.replace('-100':'100'）
+body =  body.replace('-100':'3'）.replace('"isSubscribe": 0':'"isSubscribe": 1')
 
 $done({body:JSON.stringify(body)})
 
