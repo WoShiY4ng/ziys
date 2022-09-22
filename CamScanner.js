@@ -12,6 +12,15 @@ hostname = ap*.intsig.net
 **************************/
 let body = JSON.parse($response.body);
     body.data.ocr_balance = 100;
+body.data.watermarks_balance = 100;
+body.data.pdfword_balance = 100;
+body.data.immt_expy_points = 100;
+
+
+
+
+
+
     body.data.psnl_vip_property = {"renew_method": "appstore",
       "initial_tm": "1614867690",
       "svip": 1,
