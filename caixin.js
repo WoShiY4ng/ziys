@@ -10,7 +10,7 @@
 #!author=@R·E https://t.me/Functional_Store_Hub
 
 [Script]
-财新会员 = type=http-request,pattern=^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/CaiXin/Script/CaiXin.js,script-update-interval=0
+财新会员 = type=http-request,pattern=^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WoShiY4ng/ziys/main/caix.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% gateway.caixin.com
