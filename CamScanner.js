@@ -10,7 +10,8 @@ http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\
 [MITM]
 hostname = ap*.intsig.net
 **************************/
-let body = JSON.parse($response.body)
+let body = JSON.parse($response.body);
+    body.data.ocr_balance = 100;
     body.data.psnl_vip_property = {"renew_method": "appstore",
       "initial_tm": "1614867690",
       "svip": 1,
@@ -31,5 +32,9 @@ let body = JSON.parse($response.body)
       "expiry": 9915130487,
       "grade": 2,
       "last_payment_method": "appstore",
-      "product_id": "com.intsig.camscanner.premiums.oneyear.autorenewable.svip.low"}
+      "product_id": "com.intsig.camscanner.premiums.oneyear.autorenewable.svip.low"};
+
+
+
+
     $done({body:JSON.stringify(body)})
