@@ -16,10 +16,10 @@ body.data.watermarks_balance = 100;
 body.data.pdfword_balance = 100;
 body.data.immt_expy_points = 100;
 body.data.no_login_ocr_balance = 20;
-
+   
  $done({body:JSON.stringify(body)})
 
-
+    
 /***************
     body.data.psnl_vip_property = {"renew_method": "appstore",
       "initial_tm": "1614867690",
