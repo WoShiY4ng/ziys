@@ -10,7 +10,7 @@
 WPS会员 = type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WoShiY4ng/ziys/main/wps.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% account.wps.cn,*account.wps.com
+hostname = *.wps.cn,*.wps.com
 
 
 
@@ -18,8 +18,8 @@ hostname = %APPEND% account.wps.cn,*account.wps.com
 
 脚本功能：解锁WPS本地会员
 脚本作者：R·E
-支持版本：商店最新 11.24.0(US) 11.26.1(CN)
-更新时间：2022.07.10
+支持版本：商店最新 11.24.5(US) 11.26.1(CN)
+更新时间：2022.09.26
 问题反馈：https://t.me/Functional_Store_Hub
 使用声明：⚠️⚠️⚠️此脚本仅供学习与交流，禁止转载与贩卖！⚠️⚠️⚠️
 */
